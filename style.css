@@ -1,0 +1,260 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Menambahkan berat font agar lebih tebal */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e5e9ec, #084f6b);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #084f6b;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 20px 20px 20px rgba(12, 1, 1, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #084f6b;
+}
+
+.container {
+    width: 80%;
+    margin: 200px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section {
+    background: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    margin-top: -10px; /* Mengurangi margin atas agar lebih rapat ke judul */
+}
+
+.profile-img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: -30px auto 10px auto; /* Menggeser gambar ke atas */
+}
+
+.about-text {
+    max-width: 500px;
+    margin-top: -10px; /* Menggeser teks lebih ke atas agar sejajar dengan gambar */
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #084f6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #063c54;
+}
+
+.footer {
+    background: #084f6b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap'); /* Menambahkan font DM Sans dari Google Fonts */
+
+.education-content {
+    display: flex; /* Membuat dua kolom */
+    justify-content: space-between; /* Menjaga jarak antara kolom */
+    gap: 30px; /* Jarak antar kolom */
+    margin-top: -10px; /* Menggeser konten sedikit ke atas */
+}
+
+.education-left, .education-right {
+    width: 48%; /* Membagi lebar masing-masing kolom */
+    text-align: left; /* Rata kiri untuk konten dalam kolom */
+}
+
+.education-left h3, .education-right h3 {
+    font-weight: 600; /* Memberikan ketebalan font pada judul */
+}
+
+.section {
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto; /* Menambahkan margin kiri otomatis */
+    margin-right: auto; /* Menambahkan margin kanan otomatis */
+}
+
+.education-content {
+    padding-left: 10px; /* Memberikan sedikit ruang di sebelah kiri konten */
+    padding-right: 10px; /* Memberikan sedikit ruang di sebelah kanan konten */
+}
+.education-right ul {
+    list-style-type: disc; /* Menggunakan bullet point untuk list */
+    padding-left: 20px; /* Memberikan ruang pada sisi kiri untuk daftar */
+    text-align: left; /* Mengatur teks di kiri */
+}
+
+.education-right li {
+    margin-bottom: 8px; /* Memberikan jarak antar item daftar */
+}
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skills-column {
+    width: 30%;
+    text-align: left;
+}
+
+.soft-skills {
+    margin-left: 20px; /* Menggeser Soft Skills ke kanan */
+}
+
+.hard-skills img {
+    width: 100%; /* Agar gambar tidak terlalu besar dan tidak bertumpuk */
+    max-width: 250px;
+    display: block;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.portfolio-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    background: url('image/batik-mega-mendung.jpg'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative; /* Tambahkan posisi relatif */
+    overflow: hidden; /* Biar teks tetap rapi */
+}
+
+/* Tambahkan background semi-transparan pada teks */
+.portfolio-box span {
+    background: rgba(0, 0, 0, 0.6); /* Warna hitam transparan */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease; /* Biar ada efek saat hover */
+}
+
+/* Efek interaktif tetap ada saat hover */
+.portfolio-box:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Saat hover, background teks lebih terang */
+.portfolio-box:hover span {
+    background: rgba(0, 0, 0, 0.8);
+}
+.work-list {
+    text-align: left; /* Bikin teks list rata kiri */
+    padding-left: 20px; /* Tambahin padding biar nggak kepentok kiri banget */
+    list-style-type: disc; /* Biar ada bullet point */
+}
+/* Animasi untuk teks "Portfolio" dengan efek fade-in dan slide */
+@keyframes fadeSlide {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeSlide 2.0s ease-out forwards;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #084f6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #063c54;
+}
