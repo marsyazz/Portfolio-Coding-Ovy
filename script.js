@@ -13,3 +13,19 @@ document.querySelectorAll("nav a").forEach(anchor => {
         });
     });
 });
+window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
