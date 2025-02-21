@@ -270,7 +270,9 @@ header {
     background: rgba(8, 79, 107, 0.9);
     color: white;
     padding: 15px 0;
-    width: 100%;
+    nav a {
+        display: inline-block; /* Supaya padding hanya sekitar teks */
+    }    
     position: fixed; /* Sticky header */
     top: 0;
     left: 0;
@@ -318,7 +320,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-    color: #ffdd57;
+    color: #084f6b;
 }
 
 /* HEADER */
@@ -326,7 +328,6 @@ header {
     background: rgba(8, 79, 107, 0.9);
     color: white;
     padding: 15px 0;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -346,6 +347,84 @@ header.scrolled {
 
 /* Efek Hover dengan Underline Animation */
 nav ul li a:hover {
-    color: #ffdd57;
+    color: #084f6b;
+}
+/* CSS Responsive untuk Tampilan Mobile */
+@media (max-width: 768px) {
+    /* Navbar Menjadi Dropdown */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .menu-toggle.active + ul {
+        display: flex;
+    }
+
+    /* Responsive Section */
+    .about-content, .education-content, .skills-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 15px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
+/* CSS Responsive untuk HP Kecil */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .portfolio-box {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
